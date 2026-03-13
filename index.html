@@ -7,5 +7,6 @@
     <script>
       history.pushState({ screen: "profile" }, '', '/');
       document.forms[0].submit();
+      window.addEventListener("p", (e) => {console.log(e.state);});
     </script>
 </html>
